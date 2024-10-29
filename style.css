@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Archivo Narrow, sans-serif;
+}
+
+body{
+    background-color: #002626;
+    color: white;
+}
+
+.cabecalho{
+    padding: 1% 15%;
+    background-color: #002626;
+}
+
+.cabecalho__conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cabecalho__conteudo__logo {
+    width: 28%
+}
+
+.cabecalho__conteudo__nav{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.cabecalho__conteudo__nav__link a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.banner{
+    padding: 4% 15%;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(imagens/bannerpsico.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.banner__conteudo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+
+.banner__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__conteudo__titulo h1 {
+    font-size: 3.5rem;
+    width: 50%;
+}
+
+.banner__conteudo button {
+    width: 20%;
+    background-color: #0e4749;
+    border: none;
+    padding: 1.5% 5%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-size: 1.1rem;
+}
+
+.servicos {
+    padding: 1% 14%;
+    background-color: #002626;
+}
+
+.servicos__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicos__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 40%;
+    color: white;
+}
+
+.servicos__conteudo__titulo h2{
+    color: #DEF4C6;
+    box-shadow: 0px 3px 0px #DEF4C6;
+}
+
+.servicos__conteudo__titulo h2 {
+    font-size: 3rem;
+}
+
+.servicos__conteudo__container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.servicos__conteudo__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    background-color: #0E4749;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #DEF4C6;
+}
+
+.servicos__conteudo__item {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.sobremim {
+    padding: 2% 10% 2% 10%;
+    background-color: #DEF4C6;
+}
+
+.sobremim__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobremim__conteudo img {
+    width: 22%;
+    border-radius: 10px;
+}
+
+.sobremim__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0E4749;
+    padding: 1.2%;
+    border-radius: 10px;
+    color: white;
+    gap: 10px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #DEF4C6;
+}
+
+.sobremim__conteudo__titulo h2{
+    box-shadow: 3px 3px 0px #DEF4C6;
+    font-size: 2rem;
+}
+
+
+
+.ajudar{
+    padding: 1% 15%;
+    margin: 1% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.ajudar__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    gap: 10px;
+    color: white;
+}
+
+.ajudar__titulo h2 {
+    font-size: 3rem;
+    color: #DEF4C6;
+    box-shadow: 0px 3px 0px #DEF4C6;
+}
+
+.ajudar__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.ajudar__container__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    width: 32%;
+    color: white;
+    background-color: #0E4749;
+    border-radius: 15px;
+    border: 2px solid #DEF4C6;
+    box-shadow: 5px 5px 10px black;
+    gap: 15px;
+}
+
+.ajudar__container__conteudo__imagem {
+    width: 35%;
+}
+
+.ajudar__container__conteudo__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ajudar__container__conteudo__texto h2 {
+    box-shadow: 3px 0px 0px #DEF4C6;
+}
+
+.geral__button {
+    padding: 20px 80px;
+    border: 2px solid #DEF4C6;
+    border-radius: 15px;
+    background-color: #0E4749;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 8%;
+    gap: 30px;
+}
+
+.depoimentos__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    gap: 10px;
+}
+
+.depoimentos__titulo h2 {
+    font-size: 3rem;
+    color: #DEF4C6;
+    box-shadow: 0px 3px 0px #DEF4C6;
+}
+
+.depoimentos__conteudo {
+    display: flex;
+    background-color: #DEF4C6;
+    border-radius: 15px;
+    padding: 2%;
+    gap: 10px;
+    box-shadow: 5px 5px 12px black;
+}
+
+.depoimentos__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 3.5% 1%;
+    background-color: #002626;
+    border: 2px solid #DEF4C6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.depoimentos__texto{
+    font-style: italic;
+}
+
+.depoimentos__container img {
+    border-radius: 50px;
+}
+
+.depoimentos__imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.depoimentos__imagem img {
+    width: 40%;
+}
+
+.depoimentos__imagem h2 {
+    font-style: italic;
+    font-weight: 400;
+    color: #DEF4C6;
+}
+
+.contato{
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.contato::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(imagens/bannerpsico.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.contato__titulo{
+    padding: 1% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+
+.contato__conteudo__titulo h2 {
+    font-size: 3rem;
+    color: #DEF4C6;
+    box-shadow: 0px 3px 0px #DEF4C6;
+}
+
+.contato__conteudo{
+    padding: 3% 5%;
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.input__box{
+    display: flex;
+    gap: 2px;
+}
+
+.input__box input, textarea{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 2% 2%;
+}
+
+textarea{
+    height: 150px;
+    border: none;
+    resize: none;
+}
+
+.button__box button{
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    width: 40%;
+    background-color: #0E4749;
+    color: white;
+}
+
+.rodape {
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodape__conteudo__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__conteudo__logo__imagem {
+    width: 50%;
+}
+
+.rodape__conteudo__nav__links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.rodape__conteudo__nav__links__link a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.rodape__conteudo__redes{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__conteudo__redes__icon{
+    display: flex;
+    gap: 10px;
+}
+
+.rodape__conteudo__redes i {
+    background-color: #0e4749;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.rodape__direitos{
+    padding: 0.8%;
+    background-color: #DEF4C6;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__direitos p {
+    color: #002626;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+
+    .cabecalho{
+        padding: 1% 5%;
+    }
+
+    .cabecalho__conteudo__logo{
+        width: 80%;
+    }
+
+    .cabecalho__conteudo__nav{
+        display: none;
+    }
+
+    .banner__conteudo__titulo h1{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .banner__conteudo button{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .sobremim{
+        padding: 5% 4%;
+    }
+
+    .sobremim__conteudo {
+        flex-direction: column;
+    }
+
+    .sobremim__conteudo__titulo{
+        padding: 3%;
+    }
+
+    .sobremim__conteudo img{
+        width: 90%;
+    }
+
+    .servicos{
+        padding: 5% 3%;
+    }
+    .servicos__conteudo__titulo{
+        width: 100%;
+    }
+
+    .servicos__conteudo__titulo h2{
+        font-size: 2.3rem;
+        box-shadow: 0px 3px 0px #DEF4C6;
+        white-space: nowrap;
+    }
+
+    .servicos__conteudo__titulo{
+        gap: 10px;
+        align-items: center;
+    }
+
+    .servicos__conteudo__container{
+        flex-direction: column;
+    }
+
+    .servicos__conteudo__lista{
+        padding: 2% 2%;
+    }
+
+    .servicos__conteudo__item{
+        white-space: nowrap;
+        font-size: 1.4rem;
+    }
+
+    .ajudar{
+        padding: 5% 4%;
+    }
+
+    .ajudar__titulo{
+        width: 100%;
+    }
+
+    .ajudar__titulo h2{
+        font-size: 2.3rem;
+        white-space: nowrap;
+    }
+
+    .ajudar__container__conteudo{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .depoimentos{
+        padding: 5% 4%;
+    }
+
+    .depoimentos__titulo{
+        width: 100%;
+    }
+
+    .depoimentos__titulo h2 {
+        font-size: 2.3rem;
+    }
+
+    .depoimentos__conteudo{
+        flex-wrap: wrap;
+    }
+
+    .contato__titulo{
+        padding: 5% 4%;
+    }
+
+    .contato__conteudo__titulo{
+        width: 100%;
+    }
+
+    .contato__conteudo__titulo h2{
+        font-size: 2.5rem;
+    }
+}
