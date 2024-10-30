@@ -42,7 +42,7 @@ body{
 }
 
 .banner{
-    padding: 4% 15%;
+    padding: 2% 15%;
     position: relative;
     z-index: 1;
     background-color: black;
@@ -94,7 +94,6 @@ body{
 
 .servicos {
     padding: 1% 14%;
-    background-color: #002626;
 }
 
 .servicos__conteudo {
@@ -136,7 +135,7 @@ body{
     flex-direction: column;
     gap: 10px;
     list-style-type: none;
-    background-color: #0E4749;
+    background: linear-gradient(#002626,#0e4749);
     padding: 20px 50px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px black;
@@ -169,7 +168,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #0E4749;
+    background: linear-gradient(200deg,#002626 10%,#0e4749 90%);
     padding: 1.2%;
     border-radius: 10px;
     color: white;
@@ -226,7 +225,7 @@ body{
     padding: 1%;
     width: 32%;
     color: white;
-    background-color: #0E4749;
+    background: linear-gradient(50deg,#002626 2%,#0e4749 95%);
     border-radius: 15px;
     border: 2px solid #DEF4C6;
     box-shadow: 5px 5px 10px black;
@@ -295,7 +294,7 @@ body{
     gap: 20px;
     text-align: center;
     padding: 3.5% 1%;
-    background-color: #002626;
+    background: linear-gradient(50deg,#002626 20%,#0e4749 80%);
     border: 2px solid #DEF4C6;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
@@ -563,6 +562,16 @@ textarea{
         flex-wrap: wrap;
     }
 
+    .ajudar__container__conteudo__texto{
+        align-items: center;
+    }
+
+    .ajudar__container__conteudo__texto h2{
+        white-space: nowrap;
+        font-size: 1.3rem;
+        box-shadow: 0px 3px 0px #DEF4C6;
+    }
+
     .depoimentos{
         padding: 5% 4%;
     }
@@ -589,5 +598,22 @@ textarea{
 
     .contato__conteudo__titulo h2{
         font-size: 2.5rem;
+    }
+
+    .rodape{
+        padding: 6% 4%;
+    }
+
+    .rodape__conteudo__logo__imagem{
+        width: 60%;
+    }
+
+    .rodape__conteudo__nav__links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__conteudo__nav__links__link a{
+        font-size: 1rem;
     }
 }
