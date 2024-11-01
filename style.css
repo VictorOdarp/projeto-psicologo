@@ -20,6 +20,7 @@ body{
 
 .cabecalho__conteudo{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -39,6 +40,10 @@ body{
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
+}
+
+.menu__icon{
+    display: none;
 }
 
 .banner{
@@ -82,14 +87,14 @@ body{
 
 .banner__conteudo button {
     width: 20%;
-    background-color: #0e4749;
-    border: none;
     padding: 1.5% 5%;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    font-size: 0.9rem;
     font-size: 1.1rem;
+    background: linear-gradient(#002626,#0e4749);
+    color: white;
+    border: 2px solid #DEF4C6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
 }
 
 .servicos {
@@ -243,7 +248,7 @@ body{
 }
 
 .ajudar__container__conteudo__texto h2 {
-    box-shadow: 3px 0px 0px #DEF4C6;
+    box-shadow: 3px 3px 0px #DEF4C6;
 }
 
 .geral__button {
@@ -375,6 +380,7 @@ body{
     padding: 3% 2%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -418,6 +424,11 @@ textarea{
 
 .whatsapp__container{
     display: flex;
+    padding: 2.6%;
+    background: linear-gradient(50deg,#002626 20%,#0e4749 80%);
+    border: 2px solid #DEF4C6;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .whatsapp__container__conteudo{
@@ -426,7 +437,6 @@ textarea{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
 }
 
 .whatsapp__container__conteudo__button button {
@@ -505,15 +515,41 @@ textarea{
 @media (max-width: 768px){
 
     .cabecalho{
+        padding: 1% 0%;
+    }
+
+    .cabecalho__conteudo{
         padding: 1% 5%;
     }
 
     .cabecalho__conteudo__logo{
-        width: 80%;
+        width: 85%;
     }
 
     .cabecalho__conteudo__nav{
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: linear-gradient(#002626,#0e4749);
+        z-index: 2;
+        text-align: center;
+        overflow: hidden;
+        gap: 0;
+    }
+
+    .cabecalho__conteudo__nav__link{
+        padding: 5.3%;
+    }
+
+    .menu__icon{
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    #menuList{
+        transition: all 0.5s;
     }
 
     .banner__conteudo__titulo h1{
@@ -629,6 +665,24 @@ textarea{
         font-size: 2.5rem;
     }
 
+    .contato{
+        padding: 5% 2%;
+    }
+
+    .contato__conteudo{
+        flex-direction: column;
+    }
+
+    form{
+        text-align: center;
+        width: 100%;
+    }
+
+    .whatsapp__container__conteudo{
+        text-align: center;
+        padding: 2%;
+    }
+
     .rodape{
         padding: 6% 4%;
     }
@@ -644,5 +698,9 @@ textarea{
 
     .rodape__conteudo__nav__links__link a{
         font-size: 1rem;
+    }
+
+    .rodape__direitos{
+        text-align: center;
     }
 }

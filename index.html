@@ -11,7 +11,7 @@
     <header class="cabecalho">
         <nav class="cabecalho__conteudo">
             <img class="cabecalho__conteudo__logo" src="imagens/psicólogaheader.png"></img>
-            <ul class="cabecalho__conteudo__nav">
+            <ul class="cabecalho__conteudo__nav" id="menuList">
                 <li class="cabecalho__conteudo__nav__link"><a href="">Home</a></li>
                 <li class="cabecalho__conteudo__nav__link"><a href="">Sobre mim</a></li>
                 <li class="cabecalho__conteudo__nav__link"><a href="">Serviços</a></li>
@@ -19,6 +19,9 @@
                 <li class="cabecalho__conteudo__nav__link"><a href="">Depoimentos</a></li>
                 <li class="cabecalho__conteudo__nav__link"><a href="">Contato</a></li>
             </ul>
+            <div class="menu__icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </nav>
     </header>
 
@@ -263,6 +266,7 @@
     <footer class="rodape__direitos">
         <p> Copyright <i class="fa-regular fa-copyright"></i> 2024 - Todos os direitos reservados | Desenvolvido por Victor Eduardo</p>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
