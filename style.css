@@ -43,6 +43,10 @@ body{
     font-size: 1.1rem;
 }
 
+.cabecalho__conteudo__nav__link a:hover{
+    color:#0e4749;
+}
+
 .menu__icon{
     display: none;
 }
@@ -96,6 +100,11 @@ body{
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.banner__conteudo button:hover{
+    transform: scale(1.1);
 }
 
 .servicos {
@@ -260,6 +269,11 @@ body{
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.geral__button:hover{
+    transform: scale(1.1);
 }
 
 .depoimentos{
@@ -421,6 +435,11 @@ textarea{
     background: linear-gradient(#002626,#0e4749);
     color: white;
     cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.button__box button:hover {
+    transform: scale(1.1);
 }
 
 .whatsapp__container{
@@ -449,6 +468,11 @@ textarea{
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.whatsapp__container__conteudo__button button:hover{
+    transform: scale(1.1);
 }
 
 .rodape {
@@ -484,6 +508,10 @@ textarea{
     font-size: 1.1rem;
 }
 
+.rodape__conteudo__nav__links__link a:hover{
+    color: #0e4749;
+}
+
 .rodape__conteudo__redes{
     display: flex;
     justify-content: center;
@@ -499,6 +527,7 @@ textarea{
     padding: 6px;
     border-radius: 10px;
     font-size: 2rem;
+    color: white;
 }
 
 .rodape__direitos{
